@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+<div class="set flex flex-wrap leading-normal text-5xl md:text-3xl lg:max-w-lg bg-white rounded shadow-lg mx-auto my-4">
+  <div class="photo-column">
+    <img class="min-w-full w-xl lg:w-md lg:h-sm object-cover rounded" title="" src="">
+  </div>
+  <div class="info-column px-6 py-4">
+    <div class="font-bold mb-2"> <%= data.fullname %> <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">SS3A</span></div>
+
+    <p class="mb-3"><span class="text-gray-600">Lives in 🏡</span>: <%= data.residence %></p>
+    
+    
+  
+
+    <p class="mb-3"><span class="text-gray-600">Occupation 👷‍♀:</span> <%= data.occupation %></p>
+    
+   
+    <p class="mb-3">
+      <span class="text-gray-600">Date of birth 📅: <%= data.day %> <%= data.month %></span> 
+      <p class="text-xl mt-2"></p>
+    </p>
+   
+   
+  
+  </div>
+</div>

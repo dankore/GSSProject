@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GSS Gwarinpa 2006 Set</title>
+    <meta charset="UTF-8" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="user-scalable=no" />
+  </head>
+
+  <body class="bg-gray-200">
+    <div class="inset-x-0 top-0 border-b-2 border-gray-200 lg:border-b-0 lg:static bg-green-700">
+    <div class="w-full w-11/12 lg:w-2xl mx-auto">
+      <div class="flex content-between w-5/6 m-auto items-center">
+        <img class="gss w-24 h-24 -ml-16" src="./static/gss.png"/>
+        <form class="form relative w-full mx-4">
+        <div class="input-cancel-button flex">
+					<input id="search" class="transition text-4 bg-white shadow-md focus:outline-none border border-transparent placeholder-gray-700 text-3xl rounded-lg py-3 pr-4 pl-12 block w-full appearance-none leading-normal ds-input" type="text" placeholder="Search names, class, occupation..." autocomplete="off" spellcheck="false">			
+        </input>
+        
+        <button class="x-icon px-2" 
+        style="
+          border: 1px solid transparent;
+          display: inline-block;
+          outline: 0;
+          cursor: pointer;
+          margin-left: -55px;
+          font-size: 50px;
+          display: none;
+          color: red;
+        " 
+        type="reset">X</button>
+          <button class="cancel-button text-2xl outline-none hidden bg-transparent text-white px-3">Cancel</button>
+        </div>
+        <div class="pointer-events-none absolute inset-y-0 left-0 pl-4 flex items-center">
+          <svg class="fill-current pointer-events-none text-gray-600 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"></path></svg>
+        </div>
+      </form>
+      <div class="whatsapp -mr-16">
+        <a href="./create-profile"><button id="submit" class="bg-blue-600 shadow-lg border border-gray-200 px-5 text-white font-bold p-3 rounded">Add Your Profile</button></a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="w-11/12 lg:w-2xl m-auto">
+    <div class="text-center my-6">
+      <div class="text-3xl font-bold">
+        2006 GSS Gwarinpa Set
+        <span class="text-sm text-gray-500"
+          >Web design by
+          <a class="underline" href="https://homeawayfromhome.online"
+            >Adamu</a
+          ></span
+        >
+      </div>
+    </div>
+    <div class="json-container flex flex-wrap content-between"></div>
+  </div>
+
+		

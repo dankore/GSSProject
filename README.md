@@ -1,2 +1,0 @@
-# GSSProject
-Created with CodeSandbox
