@@ -2,7 +2,7 @@ const usersCollection = require("../db")
   .db()
   .collection("users");
 
-let ObjectID = require("mongodb").ObjectID;
+// let ObjectID = require("mongodb").ObjectID;
 
 let User = function(data) {
   this.data = data;
@@ -14,10 +14,9 @@ User.prototype.stored = function(req, res) {
 };
 
 User.findSingleById = function(id) {
-  // console.log(id);
   return new Promise(async (resolve, reject) => {
     let users = await usersCollection.find().toArray();
-    // console.log(users);
+
     if (users.length) {
       resolve(users);
     } else {
