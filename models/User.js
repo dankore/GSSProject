@@ -9,14 +9,13 @@ let User = function(data) {
   this.errors = [];
 };
 
-User.prototype.stored = function(req, res) {
+User.prototype.stored = function() {
   usersCollection.insertOne(this.data);
 };
 
 User.findSingleById = function(id) {
   return new Promise(async (resolve, reject) => {
     let users = await usersCollection.find().toArray();
-
     if (users.length) {
       resolve(users);
     } else {
