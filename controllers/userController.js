@@ -5,13 +5,9 @@ exports.create = function(req, res) {
 };
 
 exports.createProfile = async (req, res) => {
-  try {
-    let user = await new User(req.body);
-    res.render("profile-template", { user: user });
-    user.stored();
-  } catch {
-    res.send("Sorry, something went wrong.");
-  }
+  let user = new User(req.body);
+  await user.stored();
+  res.redirect("/");
 };
 
 exports.home = async (req, res) => {

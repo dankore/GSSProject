@@ -10,7 +10,14 @@ let User = function(data) {
 };
 
 User.prototype.stored = function() {
-  usersCollection.insertOne(this.data);
+  return new Promise(async (resolve, reject) => {
+    let data = await usersCollection.insertOne(this.data);
+    if (data) {
+      resolve(data);
+    } else {
+      reject();
+    }
+  });
 };
 
 User.findSingleById = function(id) {
